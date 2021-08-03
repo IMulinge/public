@@ -1,0 +1,441 @@
+/* Import website font */
+/* @import url('https://stockfont.org/?0137cc6870e556025fdfd9046ded587dddff82c305506674166c620565f37d53'); */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i');
+* {
+	margin: 0;
+
+	padding: 0;
+}
+
+body { font-family: 'Oxygen-Regular', sans-serif; background-color: #ffffff; max-width: 100vw; overflow-x: hidden;}
+h1, h2, h3, h4 { font-weight: normal; }
+
+a, a:visited {color: rgb(255, 0, 0);}
+a:hover {color: rgb(0, 0, 0);}
+header {
+	margin-top: 1vw;
+	font-family: 'Univers-Light-Normal'; 
+	display: grid; 
+	grid-template-columns: 15% 85%;
+	align-items: center;
+	
+	border-top: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid #ddd; 
+
+}
+
+header h1 {
+	text-align: center;
+	font-size: 5em;
+}
+form {
+	display: block;
+}
+
+
+header form input[type=text] {
+	
+	font-size: 1em;
+	padding: 0.5em;
+
+	width: 70%;
+}
+
+body > img { width: 100vw; }
+
+header form input[type=submit] {
+	background-color: #ffffff;
+	color: rgb(255, 0, 0);
+	width: 8%;
+	font-size: 1em;
+	padding: 0.5em;
+	cursor: pointer;
+	border-radius: 1px;
+	text-decoration: none;
+}
+
+
+
+header form input[type=submit]:hover {
+	border-radius: 1px;
+	background-color: #ffffff; 
+	border-color: #ff0000;
+}
+
+button {
+	background-color: #ffffff; 
+	color: rgb(255, 0, 0);
+	padding: 7px 15px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 1px;
+  }
+
+
+button:hover {
+	border-radius: 1px;
+	background-color: #ffffff; 
+	border-color: #ff0000;
+	
+}
+
+
+
+header .i {
+	color: #e43137;
+}
+header .b {
+	color: #d10000;
+}
+header .u {
+	color: #f4ae01;
+}
+header .y {
+	color: #85b716;
+}
+
+body > nav {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+body > nav ul li:last-child a:after {content: 'ˬ'; position: absolute;}
+
+body > nav ul {
+	display: flex;
+	width: 100vw;
+	list-style-type: none;
+}
+
+body > nav ul li {
+	flex: 1;
+	text-decoration: none;
+
+	border-top: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid #ddd; 
+
+}
+
+body > nav ul li a {
+	display: block; text-align: center;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	font-size: 1.0em;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+
+	border-top: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid #ddd; 
+
+}
+
+.productList {
+	list-style-type: none;
+}
+
+.productList li {
+	padding: 5vw;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	display: grid;
+	grid-template-columns: 18% 80%;
+}
+
+.productList img {width: auto; display: block; max-width: 10vw;}
+
+
+a.more {display: block; text-align: right; font-weight: bold; float: right; background-color: #f33636;
+	color: white;
+
+	font-size: 2em;
+	padding: 0.5em;
+	cursor: pointer; }
+
+main {padding: 3vw; display: block; overflow: hidden; width: 80vw; margin: auto; border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255);}
+
+article.product {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: "img details"
+	"description description"
+	"reviews reviews"
+}
+
+article.product img {
+	grid-area: img;
+}
+
+main h1 {margin-top: 5vw; margin-bottom: 5vw;}
+article .details {
+	grid-area: details;
+}
+
+article .reviews {
+	grid-area: reviews;
+
+}
+
+textarea {width: 100%; height: 20em;}
+.reviews form {margin-top: 5em;}
+.reviews ul {
+	list-style-type: none;
+}
+.reviews li{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+article .description {
+	grid-area: description;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.price {color: red;}
+article.product .price {text-align: left;}
+
+footer {margin-top: 5vw; border-top: 1px solid rgb(255, 255, 255);}
+
+time {display: block; margin: 1em 0;}
+main form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50vw;
+}
+
+.details p {
+	margin-top: 0.5em;
+}
+main form label, main form input {
+	flex-grow: 1;
+	width: 20vw;
+	margin-bottom: 1em;
+	margin-right: 2vw;
+	margin-left: 2vw;
+}
+
+.bid {
+	margin-top: 2em;
+	padding: 0;
+}
+
+.bid input {
+	margin-left: 0;
+}
+
+main form input[type=submit] {
+	background-color: #f33636;
+	color: white;
+	flex-grow: 0;
+	margin-left: auto;
+	font-size: 1.2em;
+	padding: 0.2em;
+	cursor: pointer;
+	border: 0;
+
+}
+
+
+
+/* slideshow ani*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+main > .products .buttons a:hover {
+	background: #434f61;
+}
+main .cart h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .cart table {
+	width: 100%;
+}
+main .cart table thead td {
+	padding: 30px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .cart table thead td:last-child {
+	text-align: right;
+}
+main .cart table tbody td {
+	padding: 20px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .cart table tbody td:last-child {
+	text-align: right;
+}
+main .cart table .img {
+	width: 80px;
+}
+main .cart table .remove {
+	color: #777777;
+	font-size: 12px;
+	padding-top: 3px;
+}
+main .cart table .remove:hover {
+	text-decoration: underline;
+}
+main .cart table .price {
+	color: #999999;
+}
+main .cart table a {
+	text-decoration: none;
+	color: #555555;
+}
+main .cart table input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main .cart .subtotal {
+	text-align: right;
+	padding: 40px 0;
+}
+main .cart .subtotal .text {
+	padding-right: 40px;
+	font-size: 18px;
+}
+main .cart .subtotal .price {
+	font-size: 18px;
+	color: #999999;
+}
+main .cart .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+main .cart .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+main .cart .buttons input[type="submit"]:hover {
+	background: #434f61;
+}
+main .placeorder h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .placeorder p {
+	text-align: center;
+}
